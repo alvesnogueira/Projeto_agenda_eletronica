@@ -1,37 +1,12 @@
-<?php  include (PATH_VIEWS . DS ."header.php");  ?>
-<script type="text/javascript">
-  // Inicia o validador ao carregar a página
-$(function() {
-    // valida o formulário
-    $('#form-validado').validate({
-        // define regras para os campos
-        rules: {
-            nome: {
-                required: true,
-                minlength: 2
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            telefone: {
-                required: true
-                minlength: 8
-            }
-        },
-        // define messages para cada campo
-        messages: {
-            nome: "Preencha o seu nome completo",
-            email: "Preencha seu e-mail de contato",
-            telefone: "Informe seu telefone"
-        }
-    });
-});
-</script>
+<?php 
+  require_once("includes/config.php");
+	include "header.php";
+	include "conteiner.php";
+  header('Content-Type: text/html; charset=utf-8');
+ ?>
 
-<h3>Cadastrar Contato</h3>
 
-<form id="form-validado" action="cadastra.php" method="post" class="form-horizontal" role="form">
+<form action="insere.php" method="post" class="form-horizontal" role="form">
   <div class="form-group">
     <label for="inputname" class="col-sm-2 control-label">Nome</label>
     <div class="col-sm-5">
@@ -75,6 +50,3 @@ $(function() {
     </div>
   </div>
 </form>
-
-
-<?php include (PATH_VIEWS . DS ."footer.php"); ?>

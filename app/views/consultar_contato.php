@@ -1,3 +1,4 @@
+<?php  include (PATH_VIEWS . DS ."header.php");  ?>
 <h3>Consultar contato</h3>
 
 <form action="consultar" method="post" class="form-horizontal" role="form">
@@ -15,19 +16,26 @@
 
 </form>
 
-<?php if(isset($contatos)): ?>
+<?php if(!empty($contatos)): ?>
 
 <table width="700" align="center">
   <tr>
     <td bgcolor="#ebf3ff"><b>Nome</b></td>
     <td bgcolor="#ebf3ff"><b>Email</b></td>
+    <td bgcolor="#ebf3ff"><b>Telefone</b></td>
+    <td bgcolor="#ebf3ff"><b>endereco</b></td>
+    <td bgcolor="#ebf3ff"><b>Data Nascimento</b></td>
   </tr>
 
   <?php foreach($contatos as $contato) ?>
   <tr>
     <td><?php  echo $contato['nome'] ?></br></td>
     <td><?php  echo $contato['email'] ?></br></td>
+    <td><?php  echo $contato['telefone'] ?></br></td>
+    <td><?php  echo $contato['endereco'] ?></br></td>
+    <td><?php  echo $contato['datanasc'] ?></br></td>
   </tr>
 
 </table>
 <?php   endif; ?>
+<?php include (PATH_VIEWS . DS ."footer.php"); ?>

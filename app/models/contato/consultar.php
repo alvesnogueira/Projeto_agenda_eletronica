@@ -7,8 +7,8 @@ if(isset($_POST)){
 	$nome = isset($_POST['nome']) ? $_POST['nome'] : NULL;
 
 	$query = "SELECT *
-					FROM  contato
-					WHERE nome = '$nome'";
+	FROM  contato
+	WHERE nome = '$nome'";
 
 	$result = mysqli_query($_conexao,$query) or die(mysqli_error($_conexao));
 	$qtd = mysqli_num_rows($result);
