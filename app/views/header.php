@@ -20,7 +20,7 @@
 					<li><a href="cadastrar">Cadastrar</a></li>
 					<li><a href="consultar">Consultar</a></li>
 					<li><a href="atualizar">Atualizar</a></li>
-					<li><a href="excluir">Exluir</a></li>
+					<li><a href="excluir">Excluir</a></li>
 
 				</ul>
 			</nav>

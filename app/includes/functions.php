@@ -26,3 +26,25 @@ function connect_db($_config){
 function prepare_parameters($params){
 	return explode('/', $params);
 }
+
+/*Exibe o debug no site*/
+function debug($params = NULL)
+{	
+
+	if(DEBUG){
+		echo '<div class="debug">';
+			echo'<h2>PARAMS:</h2>';
+			var_dump($params);	
+
+			echo'<h2>GET:</h2>';
+			var_dump($_GET);
+
+			echo'<h2>POST:</h2>';
+			var_dump($_POST);
+
+			echo'<h2>SESSION</h2>';
+			var_dump($_SESSION);
+			
+		echo '</div>';
+	}
+}

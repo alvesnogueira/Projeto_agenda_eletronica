@@ -1,5 +1,5 @@
 <?php 
-require_once ("includes/preload.php");
+require_once (PATH_INCLUDES. "preload.php");
 
 $nome	  = $_POST['nome'];
 $email 	  = $_POST['email'];
@@ -24,4 +24,3 @@ mysqli_query($_conexao,$string_sql) or die("Erro, não possível inserir no banc
     } 
      }
     mysqli_close($_conexao); //fecha conexão com banco de dados 
-?>

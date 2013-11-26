@@ -8,7 +8,7 @@ $(function() {
         rules: {
             nome: {
                 required: true,
-                minlength: 2
+                minlength: 4
             },
             email: {
                 required: true,
@@ -31,29 +31,29 @@ $(function() {
 
 <h3>Cadastrar Contato</h3>
 
-<form id="form-validado" action="cadastra.php" method="post" class="form-horizontal" role="form">
+<form id="form-validado" action="inserir" method="post" class="form-horizontal" role="form">
   <div class="form-group">
     <label for="inputname" class="col-sm-2 control-label">Nome</label>
     <div class="col-sm-5">
-      <input type="nome" class="form-control" id="inputname" placeholder="Nome" name="nome">
+      <input value="besteira" type="text" class="form-control" id="inputname" placeholder="Nome" name="nome">
     </div>
   </div>
   <div class="form-group">
     <label for="inputname" class="col-sm-2 control-label">email</label>
     <div class="col-sm-5">
-      <input type="email" class="form-control" id="inputemail" placeholder="email" name="email">
+      <input type="text" class="form-control" id="inputemail" placeholder="email" name="email">
     </div>
   </div>
    <div class="form-group">
     <label for="inputtel" class="col-sm-2 control-label">Telefone</label>
     <div class="col-sm-5">
-      <input type="tel" class="form-control" id="inputtel" placeholder="Telefone" name="telefone">
+      <input type="" class="form-control" id="inputtel" placeholder="Telefone" name="telefone">
     </div>
   </div>
   <div class="form-group">
     <label for="inputend" class="col-sm-2 control-label">Endereço</label>
     <div class="col-sm-5">
-      <input type="end" class="form-control" id="inputend" placeholder="Endereço" name="endereco">
+      <input type="text" class="form-control" id="inputend" placeholder="Endereço" name="endereco">
     </div>
   </div>
   <div class="form-group">
